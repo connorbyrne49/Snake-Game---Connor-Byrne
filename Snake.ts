@@ -7,10 +7,11 @@ class Snake{
   private currentDirection: number;
    constructor(Snake:number){
      this.currentPosition = 0;
+     this.currentDirection = 1;
    }
 
    public move(distance:number){
-    if(this.currentPosition > 0){
+    if(this.currentDirection > 0){
       this.currentPosition = this.currentPosition + distance;
       }
     else{
@@ -18,7 +19,7 @@ class Snake{
     }
   }
 
-   public turn(snakeDirection:string){
+   public turn(position:string){
      if(this.currentDirection > 0){
        this.currentDirection = -1;
      }

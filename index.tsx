@@ -44,3 +44,10 @@ render(<App />, document.getElementById('root'));
 
 // Add display statements below
 display("Let's get started with React TypeScript!");
+
+const redSnake = new Snake(0);
+const blueSnake = new Snake(0);
+redSnake.move(3);
+redSnake.move(10);
+blueSnake.move(3);
+display(redSnake.move);
