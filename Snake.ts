@@ -28,7 +28,7 @@ class Snake{
   }
   public get position(){
     return this.currentPosition;
-  }
+  } 
 }
 
 export default Snake; 
